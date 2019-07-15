@@ -1,0 +1,18 @@
+.wooss_necessary_fields{
+    display: none;
+}
+.wooss_errors_pages{
+    display: none;
+}
+
+button.button-primary.wooss_save_button{
+    margin-top: 10px;
+}
+
+.wooss_fields{
+    margin : 10px;
+}
+
+button.button-primary.wooss-connect-sendbox.wooss_fields{
+    margin-top : 10px;
+}
