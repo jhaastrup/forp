@@ -269,13 +269,13 @@ function wooss_shipping_method()
 					//so P this is the part i want to display the error message. if this max_quoted_fee is null
 					//for now, when its null it prints 500 you get?
 
-					$max_quoted_fee = (float) "500.001";
+					//$max_quoted_fee = (float) "500.001";
+					$quoted_fee = '';
 
 					if (gettype($delivery_quotes_details) != "NULL") {
 						$max_quoted_fee = $delivery_quotes_details->max_quoted_fee;
+						$quoted_fee = $max_quoted_fee + $wooss_extra_fees;
 					}
-					$quoted_fee = $max_quoted_fee  + $wooss_extra_fees;
-
 
 					// $quoted_fee = (float) $quoted_fee;
 					// //var_dump($quoted_fee);
